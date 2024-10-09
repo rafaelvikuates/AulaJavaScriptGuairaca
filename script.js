@@ -1,48 +1,67 @@
-
-// Verificação de maioridade - Exercicio 1
-
-let idade = prompt("Digite sua idade:");
-idade = (idade);
-if (idade >= 18) {
-    console.log("Você é de maior");
-} else {
-    console.log("Você é de menor");
+function calculadora (x, y, operacao) {
+        if (operacao === "soma") {
+            return x + y;
+        }
+        if (operacao === "subtracao") {
+            return x - y;
+        }
+        if (operacao === "divisao") {
+            return x / y;
+        }
+        if (operacao === "multiplicacao") {
+            return x * y;
+        } else {
+            return "Operação Invalida";
+        }
 }
+console.log (calculadora(2, 5, "soma"));
+console.log (calculadora(2, 5, "subtracao"));
+console.log (calculadora(2, 5, "divisao"));
+console.log (calculadora(2, 5, "multiplicacao"));
+console.log (calculadora(2, 5, "batata"));
 
-// Verificação par ou impar - Exercicio 2
-function parouImpar () {
-    let numero = prompt("Digite um número:");
-    numero = (numero);
-    if (numero % 2 == 0) {
-        console.log("é par");
-    } else {
-    console.log("é impar");
-    }
-}
 
-parouImpar();
 
-// Verificação se o número é positivo, negativo ou zero - Exercicio 3
 
-let numero1 = prompt("Digite um numero de novo:");
-numero1 = (numero1);
-if (numero1 == 0) {
-    console.log("seu numero é zero");
-} else if (numero1 > 0) {
-    console.log("seu numero é positivo");
-} else {
-    console.log("seu numero é negativo");
-}
 
-// Tabuada - Exercicio 4
 
-function tabuada () {
-    let numero2 = prompt("Qual numero voce quer a tabuada?:");
-    numero2 = (numero2);
-    for (let i = 1; i < 11; i++) {
-        let total = numero2 * i;
-        console.log(numero2 + " x " + i + " = " + total);
-    }
-}
 
-tabuada();
+
+
+
+// Funcao Simples
+
+// function exibirboasvindas () {
+//     return console.log ("Olá, seja bem-vindo!");
+// }
+// exibirboasvindas();
+
+// // Função com Parâmetros
+// function soma(a,b,c) {
+//     const total = a + b + c;
+//     return console.log("Total soma:", total);
+// }
+
+// soma(10,20,30);
+
+// // Função Anonima
+// const multiplicar = function(x,y) {
+//     return console.log("Resultado", x * y);
+// }
+
+// multiplicar (3,5);
+
+// // Função Arrow Function
+// const dividir = (a, b) => a / b;
+// console.log("Divisao", dividir(10,2));
+
+// // Função de Callback
+// function inicialziarProjeto () {
+//     exibirboasvindas();
+//     soma(40,50,60);
+//     dividir(20,2);
+//     multiplicar(10,6);
+    
+// }
+
+// inicialziarProjeto();
